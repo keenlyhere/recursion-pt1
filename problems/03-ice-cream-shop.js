@@ -25,6 +25,19 @@ iceCreamShop([], 'honey lavender'); // false
 //   }
 // }
 
+function iceCreamShop(flavors, favorite) {
+  // base
+  if (flavors.length === 0) {
+    return false;
+  } else {
+    if (flavors[0] === favorite) {
+      return true;
+    } else {
+      return iceCreamShop(flavors.slice(1), favorite);
+    }
+  }
+}
+
 console.log(iceCreamShop(['vanilla', 'strawberry'], 'blue moon')); // false
 console.log(iceCreamShop(['pistachio', 'green tea', 'chocolate', 'mint chip'], 'green tea')); // true
 console.log(iceCreamShop(['cookies n cream', 'blue moon', 'superman', 'honey lavender', 'sea salt caramel'], 'pistachio')); // false
