@@ -17,6 +17,7 @@ Examples:
 //   }
 // }
 console.log(test);
+console.log("test2");
 console.log(sumArray([1, 2, 3])); //  6
 console.log(sumArray([0, 1, -3])); //  -2
 console.log(sumArray([1, 2, 3, 4, 5])); // 15
