@@ -26,6 +26,17 @@ sumToN(-8)  // returns null
 //   }
 // }
 
+function sumToN(n) {
+  // base case
+  if (n <= 0) {
+    return null;
+  }
+
+  result = n + sumToN(n - 1);
+  
+  return result;
+}
+
 console.log(sumToN(5)) // returns 15
 console.log(sumToN(1))  // returns 1
 console.log(sumToN(9))  // returns 45
