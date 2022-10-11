@@ -9,18 +9,18 @@ Examples:
 ***********************************************************************/
 
 
-function range(start, end, array) {
-  array = array || [];
+// function range(start, end, array) {
+//   array = array || [];
 
-  if (end < start) {
-    return [];
-  } else if (start < end) {
-    array.push(start);
-    return range(start + 1, end, array);
-  } else {
-    return array;
-  }
-}
+//   if (end < start) {
+//     return [];
+//   } else if (start < end) {
+//     array.push(start);
+//     return range(start + 1, end, array);
+//   } else {
+//     return array;
+//   }
+// }
 
 debugger;
 console.log(range(1, 5)); // [1, 2, 3, 4]

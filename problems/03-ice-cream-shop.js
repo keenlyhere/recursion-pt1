@@ -13,17 +13,17 @@ iceCreamShop([], 'honey lavender'); // false
 ***********************************************************************/
 
 
-function iceCreamShop(flavors, favorite) {
-  if (flavors.length === 0) {
-    return false;
-  } else {
-    if (flavors[0].includes(favorite)) {
-      return true;
-    }
+// function iceCreamShop(flavors, favorite) {
+//   if (flavors.length === 0) {
+//     return false;
+//   } else {
+//     if (flavors[0].includes(favorite)) {
+//       return true;
+//     }
 
-    return iceCreamShop(flavors.slice(1), favorite)
-  }
-}
+//     return iceCreamShop(flavors.slice(1), favorite)
+//   }
+// }
 
 console.log(iceCreamShop(['vanilla', 'strawberry'], 'blue moon')); // false
 console.log(iceCreamShop(['pistachio', 'green tea', 'chocolate', 'mint chip'], 'green tea')); // true

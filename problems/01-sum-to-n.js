@@ -12,19 +12,19 @@ sumToN(-8)  // returns null
 ***********************************************************************/
 
 
-function sumToN(n) {
+// function sumToN(n) {
 
-  if (n < 0) {
-    return null;
-  }
+//   if (n < 0) {
+//     return null;
+//   }
 
-  if (n === 0) {
-    return 0;
-  } else {
-    // debugger;
-    return n + sumToN(n - 1);
-  }
-}
+//   if (n === 0) {
+//     return 0;
+//   } else {
+//     // debugger;
+//     return n + sumToN(n - 1);
+//   }
+// }
 
 console.log(sumToN(5)) // returns 15
 console.log(sumToN(1))  // returns 1
